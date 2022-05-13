@@ -63,5 +63,28 @@
 .ex-9-img:hover{
     filter: grayscale(1) opacity(0.5);
     border-radius: 20px;
-    width: 500px;
+    transform: scale(2);
+}
+
+.ex-10-icon:hover{
+    animation: spin-10 2s infinite
+}
+
+@keyframes spin-10{
+    0%{
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: spin-11 2s infinite reverse
+}
+
+@keyframes spin-11{
+    75%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
